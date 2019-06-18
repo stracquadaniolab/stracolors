@@ -1,0 +1,28 @@
+# stracolors - .gitignore
+# by Viola Fanfani
+*
+
+# accepted files
+!docs
+!docs/*
+!tests
+!tests/*
+!tests/**
+!stracolors
+!stracolors/*
+!stracolors/**
+!*.py
+!.bumpversion.cfg
+!.editorconfig
+!.gitattributes
+!.gitignore
+!environment.yml
+!requirements.txt
+!LICENSE
+!MANIFEST.in
+!README.md
+
+# re-ignore files/dirs
+.DS_Store
+.vscode
+__pycache__
