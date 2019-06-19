@@ -3,9 +3,14 @@ stracolors
 This is the index page for the project "stracolors"
 by Viola Fanfani (v.fanfani@sms.ed.ac.uk).
 
+
 Description
 -----------
 Colors and palette choices for the lab
+
+
+You can use this package to set basic, yet nice, palettes for your plots 
+and fundamental settings for matplotlib appearance.
 
 .. toctree::
     :maxdepth: 2
