@@ -1,6 +1,6 @@
 # stracolors
 
-Current version: 0.0.1-dev
+Current version: 0.0.2-dev
 
 Colors and palette choices for the lab
 
