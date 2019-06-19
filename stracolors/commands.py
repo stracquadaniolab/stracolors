@@ -11,6 +11,7 @@ from palettable.cartocolors.qualitative import Prism_10
 from palettable.cmocean.diverging import *
 
 import seaborn as sns
+mlp.use("TkAgg")
 
 def reset_rc_params(backend:'matplotlib backend'= 'TkAgg',
                     font_family='Arial'):
@@ -56,6 +57,7 @@ def call_palette(palette_type:'specify one between divergent/sequential/qualitat
     Function that returns the desired palette
     according to the necessities specifies.
     '''
+    matplotlib.use("TkAgg")
 
     if palette_type == 'divergent':
         if number_of_colors%2:
@@ -63,7 +65,7 @@ def call_palette(palette_type:'specify one between divergent/sequential/qualitat
             palette=RdBu_11.mpl_colors[4-nc:5+nc]
         else:
             nc=int((number_of_colors)/2)
-            palette=RdBu_10.mpl_colors[4-nc:4+nc]
+            palette=RdBu_10.mpl_colors[5-nc:5+nc]
 
     elif palette_type == 'sequential':
 
@@ -213,12 +215,3 @@ def show_choices(output_folder: 'output_folder'):
     pal=call_palette(palette_type='sequential', shade='blue',darkness='light', number_of_colors=3)
     sns.palplot(sns.color_palette(pal))
     plt.savefig(output_folder+'palette_sequential_blue_light_3.png', f='png')
-
-'''
-    def call_palette(palette_type:'specify one between divergent/sequential/qualitative',
-                number_of_colors: 'specify the number of colors for the palette'=9,
-                darkness: 'specify one between dark/normal/light, only for sequential'='normal',
-                shade: 'if the palette is sequential chooses one between red and blue, only for sequential'='red',
-                reverse= False
-                ):
-'''
