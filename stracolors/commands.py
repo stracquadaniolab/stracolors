@@ -99,10 +99,8 @@ def call_palette(palette_type:'specify one between divergent/sequential/qualitat
             sys.exit()
 
         palette = palette[0:10:step] #PuBu_9
-        print(palette)
     
     elif palette_type == 'qualitative':
-        print('qualitative chosen')
         palette=Prism_10.mpl_colors[0:number_of_colors:]
     
     else:
@@ -132,6 +130,32 @@ def call_palette_binary(shade: 'choose one between color and bw' = 'color',
         palette_binary=palette_binary.reverse()
     return palette_binary
 
+def call_palette_paired( number_of_classes: 'chose the number of hues (2 shades each returned)'=5,
+                        reverse: 'choose the order (default is dark to light)' = False):
+    '''
+    This function returns a palette of two shades for each class
+    '''
+
+    palette = ['#2166ac','#92c5de', '#b2182b', '#f4a582', '#1b7837','#a6dba0', '#762a83', '#c2a5cf' , '#4d4d4d','#bababa' ]  
+    if reverse:
+        palette=palette.reverse()
+    noc=int(number_of_classes)
+    return palette[0:noc*2]
+
+def call_palette_triple( number_of_classes: 'chose the number of hues (3 shades each returned)'=5,
+                        reverse: 'choose the order (default is dark to light)' = False):
+    '''
+    This function returns a palette made of 3 shades for each class
+    '''
+
+    palette = ['#2166ac','#67a9cf', '#d1e5f0', '#b2182b', '#ef8a62', '#fddbc7', 
+                '#1b7837','#7fbf7b','#d9f0d3', '#762a83', '#af8dc3', '#e7d4e8' , '#4d4d4d','#999999', '#e0e0e0' ]  
+
+    if reverse:
+        palette=palette.reverse()
+
+    noc=int(number_of_classes)
+    return palette[0:noc*3]
 
 
 def uoe_colors():
@@ -215,3 +239,13 @@ def show_choices(output_folder: 'output_folder'):
     pal=call_palette(palette_type='sequential', shade='blue',darkness='light', number_of_colors=3)
     sns.palplot(sns.color_palette(pal))
     plt.savefig(output_folder+'palette_sequential_blue_light_3.png', f='png')
+
+    f,ax=plt.subplots(1)
+    pal=call_palette_paired()
+    sns.palplot(sns.color_palette(pal))
+    plt.savefig(output_folder+'palette_paired.png', f='png')
+
+    f,ax=plt.subplots(1)
+    pal=call_palette_triple()
+    sns.palplot(sns.color_palette(pal))
+    plt.savefig(output_folder+'palette_triple.png', f='png')
