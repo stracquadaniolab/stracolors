@@ -148,8 +148,8 @@ def uoe_colors():
 
 def show_choices(output_folder: 'output_folder'):
 
-    mpl.use("TkAgg")
-    plt.switch_backend("TkAgg")
+
+
 
     f,ax=plt.subplots(1)
     uoe=uoe_colors()
