@@ -58,8 +58,6 @@ def call_palette(palette_type:'specify one between divergent/sequential/qualitat
     Function that returns the desired palette
     according to the necessities specifies.
     '''
-    matplotlib.use("TkAgg")
-
     if palette_type == 'divergent':
         if number_of_colors%2:
             nc=int((number_of_colors-1)/2)
@@ -148,8 +146,6 @@ def uoe_colors():
     return [blue, red, white]
 
 def show_choices(output_folder: 'output_folder'):
-
-
 
 
     f,ax=plt.subplots(1)
