@@ -11,7 +11,7 @@ from palettable.cartocolors.qualitative import Prism_10
 from palettable.cmocean.diverging import *
 
 import seaborn as sns
-mlp.use("TkAgg")
+mpl.use("TkAgg")
 
 def reset_rc_params(backend:'matplotlib backend'= 'TkAgg',
                     font_family='Arial'):
