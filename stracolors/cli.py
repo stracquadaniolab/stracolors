@@ -1,8 +1,8 @@
 import sys
 
 import argh
-import matplotlib
-matplotlib.use("TkAgg")
+import matplotlib as mpl
+mpl.use("TkAgg")
 
 from stracolors import commands as cmd
 
