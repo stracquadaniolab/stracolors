@@ -2,6 +2,7 @@ import sys
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 
+
 from palettable.cmocean.sequential import *
 from palettable.colorbrewer.diverging import *
 from palettable.colorbrewer.sequential import *

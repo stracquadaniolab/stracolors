@@ -4,6 +4,9 @@ import argh
 import matplotlib as mpl
 mpl.use("TkAgg")
 
+from matplotlib import pyplot as plt
+plt.switch_backend("TkAgg")
+
 from stracolors import commands as cmd
 
 def main():
