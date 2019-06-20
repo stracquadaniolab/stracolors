@@ -4,7 +4,7 @@
 
 # accepted files
 !docs
-!docs/*
+!docs/**
 !tests
 !tests/*
 !tests/**
@@ -26,3 +26,6 @@
 .DS_Store
 .vscode
 __pycache__
+
+# Sphinx docs build directory
+docs/_build
