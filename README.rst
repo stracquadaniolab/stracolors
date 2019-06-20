@@ -42,9 +42,9 @@ behaviour of your plots::
 
 Look how the appearance changes with the default settings.
 
-    .. image:: examples/plot.png
+    .. image:: docs/esamples/plot.png
         :width: 49 %
-    .. image:: examples/plot_reset.png
+    .. image:: docs/esamples/plot_reset.png
         :width: 49 %
 
 Palette choice
@@ -69,7 +69,7 @@ On top of that, binary palettes can be chosen and two colors are returned.
         data=tips, palette=qual, ax=ax)
 
 
-.. image:: examples/boxplot_qualitative.png
+.. image:: docs/esamples/boxplot_qualitative.png
 
 **Pairs and triplets**::
 
@@ -95,9 +95,9 @@ On top of that, binary palettes can be chosen and two colors are returned.
 
 Mutiple classes:
 
-    .. image:: examples/boxplot_paired.png
+    .. image:: docs/esamples/boxplot_paired.png
         :width: 49 %
-    .. image:: examples/plot_triple.png
+    .. image:: docs/esamples/plot_triple.png
         :width: 49 %
 
 **Sequential palettes, Normal red palette with 6 colors**::
@@ -116,7 +116,7 @@ Mutiple classes:
                 height=5, aspect=.75, facet_kws=dict(sharex=False),
                 kind="line", legend="full", data=dots)
 
-.. image:: examples/sequential_red.png
+.. image:: docs/esamples/sequential_red.png
 
     
 
@@ -133,7 +133,7 @@ Mutiple classes:
                 height=5, aspect=.75, facet_kws=dict(sharex=False),
                 kind="line", legend="full", data=dots)
 
-.. image:: examples/sequential_blue.png
+.. image:: docs/esamples/sequential_blue.png
 
     
 
@@ -144,57 +144,57 @@ Available palettes
 University of Edinburgh colors
 ++++++++++++++++++++++++++++++
 
-.. image:: palettes/palette_uoe.png
+.. image:: docs/palettes/palette_uoe.png
 
 Qualitative
 +++++++++++
 
-.. image:: palettes/palette_qualitative.png
+.. image:: docs/palettes/palette_qualitative.png
 
 Binary
 ++++++
 
 Palette binary colored and black&white
 
-    .. image:: palettes/palette_binary_color.png
+    .. image:: docs/palettes/palette_binary_color.png
         :width: 49 %
-    .. image:: palettes/palette_binary_bw.png
+    .. image:: docs/palettes/palette_binary_bw.png
         :width: 49 %
 
 
 Divergent
 ++++++++++
 
-.. image:: palettes/palette_divergent.png
+.. image:: docs/palettes/palette_divergent.png
 
 Sequential
 +++++++++++
 
 Sequential red (light, normal, dark):
 
-    .. image:: palettes/palette_sequential_red_light.png
+    .. image:: docs/palettes/palette_sequential_red_light.png
         :width: 32 %
-    .. image:: palettes/palette_sequential.png
+    .. image:: docs/palettes/palette_sequential.png
         :width: 32 %
-    .. image:: palettes/palette_sequential_red_dark.png
+    .. image:: docs/palettes/palette_sequential_red_dark.png
         :width: 32 %
 
 Sequential blue (light, normal, dark):
 
-    .. image:: palettes/palette_sequential_blue_light.png
+    .. image:: docs/palettes/palette_sequential_blue_light.png
         :width: 32 %
-    .. image:: palettes/palette_sequential_blue.png
+    .. image:: docs/palettes/palette_sequential_blue.png
         :width: 32 %
-    .. image:: palettes/palette_sequential_blue_dark.png
+    .. image:: docs/palettes/palette_sequential_blue_dark.png
         :width: 32 %
 
 Pairs and Triplets
 ++++++++++++++++++
 
 
-.. image:: palettes/palette_paired.png
+.. image:: docs/palettes/palette_paired.png
 
-.. image:: palettes/palette_triple.png
+.. image:: docs/palettes/palette_triple.png
 
 Commands
 --------
