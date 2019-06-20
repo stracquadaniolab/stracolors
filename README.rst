@@ -42,9 +42,9 @@ behaviour of your plots::
 
 Look how the appearance changes with the default settings.
 
-    .. image:: docs/esamples/plot.png
+    .. image:: docs/examples/plot.png
         :width: 49 %
-    .. image:: docs/esamples/plot_reset.png
+    .. image:: docs/examples/plot_reset.png
         :width: 49 %
 
 Palette choice
@@ -69,7 +69,7 @@ On top of that, binary palettes can be chosen and two colors are returned.
         data=tips, palette=qual, ax=ax)
 
 
-.. image:: docs/esamples/boxplot_qualitative.png
+.. image:: docs/examples/boxplot_qualitative.png
 
 **Pairs and triplets**::
 
@@ -95,9 +95,9 @@ On top of that, binary palettes can be chosen and two colors are returned.
 
 Mutiple classes:
 
-    .. image:: docs/esamples/boxplot_paired.png
+    .. image:: docs/examples/boxplot_paired.png
         :width: 49 %
-    .. image:: docs/esamples/plot_triple.png
+    .. image:: docs/examples/plot_triple.png
         :width: 49 %
 
 **Sequential palettes, Normal red palette with 6 colors**::
@@ -116,7 +116,7 @@ Mutiple classes:
                 height=5, aspect=.75, facet_kws=dict(sharex=False),
                 kind="line", legend="full", data=dots)
 
-.. image:: docs/esamples/sequential_red.png
+.. image:: docs/examples/sequential_red.png
 
     
 
@@ -133,7 +133,7 @@ Mutiple classes:
                 height=5, aspect=.75, facet_kws=dict(sharex=False),
                 kind="line", legend="full", data=dots)
 
-.. image:: docs/esamples/sequential_blue.png
+.. image:: docs/examples/sequential_blue.png
 
     
 
