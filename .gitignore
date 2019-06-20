@@ -20,7 +20,7 @@
 !requirements.txt
 !LICENSE
 !MANIFEST.in
-!README.md
+!README.rst
 
 # re-ignore files/dirs
 .DS_Store
