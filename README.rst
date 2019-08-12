@@ -4,7 +4,7 @@ Getting started
 Installation
 ------------
 
-This package have some dependencies (all solved by conda):
+This package has some dependencies (all solved by conda):
 
 - argh
 - matplotlib
