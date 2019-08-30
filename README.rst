@@ -205,4 +205,4 @@ available.
 
 `stracolors show-choices output-folder`
   
-Current Version: 1.0.0-dev
+Current Version: 1.0.1-dev

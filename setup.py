@@ -11,7 +11,7 @@ setup(
     # package information
     name = 'stracolors',
     packages = find_packages(),
-    version = '1.0.0-dev',
+    version = '1.0.1-dev',
     description = 'Colors and palette choices for the lab',
     long_description = readme,
     license = 'MIT',
